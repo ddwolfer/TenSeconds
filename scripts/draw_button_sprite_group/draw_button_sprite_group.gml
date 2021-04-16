@@ -36,8 +36,14 @@ function draw_button_sprite_group(argument0, argument1, argument2){
 	//mouse
 	for( var i = 0 ; i < array_length_1d(ButtonGroup) ; i++ ){
 		var Button = ButtonGroup[i]
-		//mouse
-		if( MX >= Button[?"x1"] && MX <=Button[?"x2"] && MY >= Button[?"y1"] && MY <= Button[?"y2"]){
+		DrawX1 = Button[?"x1"]
+		DrawX2 = Button[?"x2"]
+		DrawY1 = Button[?"y1"]
+		DrawY2 = Button[?"y2"]
+		centerX = (DrawX1 + DrawX2)/2 
+		centerY = (DrawY1 + DrawY2)/2
+		//mouse 
+		if( MX >= centerX-sprite_get_width(argument1)/2 && MX <=centerX+sprite_get_width(argument1)/2 && MY >= centerY-sprite_get_height(argument1)/2 && MY <= centerY+sprite_get_height(argument1)/2 ){
 			group[?"cursor"] = i
 		}
 		ButtonGroup[i] = Button
