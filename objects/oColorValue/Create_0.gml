@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-cursor_y = y + 255 - 210
+cursor_y = y + 255 - 183
 pressed = false
 
 upixelH = shader_get_uniform(shOutline, "pixelH")

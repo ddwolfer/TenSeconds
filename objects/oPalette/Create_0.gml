@@ -2,15 +2,15 @@
 // You can write your code in this editor
 //init globalvars
 globalvar colorHue, colorSaturation, colorValue, PaletteColor;
-colorHue = 109;
-colorSaturation = 30;
-colorValue = 82;
+colorHue = 183;
+colorSaturation = 183;
+colorValue = 183;
 PaletteColor = make_colour_hsv(colorHue, colorSaturation, colorValue)
 
 
 //init vars
-cursor_x = x + 75;
-cursor_y = y + 255 - 80;
+cursor_x = x + 0;
+cursor_y = y + 255 - 0;
 pressed = false;
 
 upixelH = shader_get_uniform(shOutline, "pixelH")
