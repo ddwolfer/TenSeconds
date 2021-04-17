@@ -13,7 +13,7 @@ function draw_button_sprite_gui(argument0, argument1, argument2){
 	centerX = (DrawX1 + DrawX2)/2
 	centerY = (DrawY1 + DrawY2)/2
 	
-	if( MX >= centerX-argument1.sprite_width/2 && MX <=centerX+argument1.sprite_width/2 && MY >= centerY-argument1.sprite_height/2 && MY <= centerY+argument1.sprite_height/2){
+	if( MX >= centerX-sprite_get_width(argument1)/2 && MX <=centerX+sprite_get_width(argument1)/2 && MY >= centerY-sprite_get_height(argument1)/2 && MY <= centerY+sprite_get_height(argument1)/2){
 		Button[?"cursor"] = 1
 	}else{
 		Button[?"cursor"] = 0
