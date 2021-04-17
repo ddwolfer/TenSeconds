@@ -10,10 +10,12 @@
     {"id":{"name":"button_group_init","path":"scripts/button_group_init/button_group_init.yy",},"order":6,},
     {"id":{"name":"sMenu","path":"sprites/sMenu/sMenu.yy",},"order":0,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":1,},
+    {"id":{"name":"sWallTileSetsNew","path":"sprites/sWallTileSetsNew/sWallTileSetsNew.yy",},"order":6,},
     {"id":{"name":"sWallTileSets","path":"sprites/sWallTileSets/sWallTileSets.yy",},"order":4,},
     {"id":{"name":"Wall_TileSets","path":"tilesets/Wall_TileSets/Wall_TileSets.yy",},"order":0,},
     {"id":{"name":"button_box_init","path":"scripts/button_box_init/button_box_init.yy",},"order":0,},
     {"id":{"name":"r_01","path":"rooms/r_01/r_01.yy",},"order":2,},
+    {"id":{"name":"rChowdog","path":"rooms/rChowdog/rChowdog.yy",},"order":3,},
     {"id":{"name":"sMenuTitle","path":"sprites/sMenuTitle/sMenuTitle.yy",},"order":1,},
     {"id":{"name":"draw_button_sprite_group","path":"scripts/draw_button_sprite_group/draw_button_sprite_group.yy",},"order":8,},
     {"id":{"name":"sMenuButtonPressed","path":"sprites/sMenuButtonPressed/sMenuButtonPressed.yy",},"order":3,},
@@ -38,6 +40,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"r_menu","path":"rooms/r_menu/r_menu.yy",},},
     {"roomId":{"name":"r_01","path":"rooms/r_01/r_01.yy",},},
+    {"roomId":{"name":"rChowdog","path":"rooms/rChowdog/rChowdog.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

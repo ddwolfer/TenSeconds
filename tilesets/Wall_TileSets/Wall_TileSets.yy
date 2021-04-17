@@ -1,8 +1,7 @@
 {
-  "name": "Wall_TileSets",
   "spriteId": {
-    "name": "sWallTileSets",
-    "path": "sprites/sWallTileSets/sWallTileSets.yy",
+    "name": "sWallTileSetsNew",
+    "path": "sprites/sWallTileSetsNew/sWallTileSetsNew.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -19,7 +18,26 @@
   "out_tilevborder": 2,
   "out_columns": 9,
   "tile_count": 84,
-  "autoTileSets": [],
+  "autoTileSets": [
+    {"tiles":[
+        32,
+        58,
+        56,
+        57,
+        2,
+        30,
+        0,
+        3,
+        62,
+        0,
+        28,
+        5,
+        1,
+        59,
+        61,
+        0,
+      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_1","tags":[],"resourceType":"GMAutoTileSet",},
+  ],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
   "tileAnimation": {
@@ -121,6 +139,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "Wall_TileSets",
   "tags": [],
   "resourceType": "GMTileSet",
 }
