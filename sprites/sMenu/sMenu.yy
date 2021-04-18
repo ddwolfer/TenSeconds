@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "System",
-    "path": "folders/Sprites/System.yy",
+    "path": "folders/Sequences/System.yy",
   },
   "resourceVersion": "1.0",
   "name": "sMenu",
