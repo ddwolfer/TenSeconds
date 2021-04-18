@@ -12,14 +12,13 @@ if(control){
 		var xSpeed = lengthdir_x(accell, dir)
 		var ySpeed = lengthdir_y(accell, dir)
 	
-		//Horizontal movement
+		/*//Horizontal movement use when needed
 		if(place_meeting(x + xSpeed, y, oParentSolid)){
 			while(!place_meeting(x + sign(xSpeed), y, oParentSolid)){
 				x += sign(xSpeed);
 			}
 			xSpeed = 0;
 		}
-		x += xSpeed;
 
 		//Vertical movement
 		if(place_meeting(x, y + ySpeed, oParentSolid)){
@@ -27,8 +26,29 @@ if(control){
 				y += sign(ySpeed);
 			}
 			ySpeed = 0;
+		}*/
+		
+		//tile collision
+		//horizontal
+		if(xSpeed > 0) bboxSide = bbox_right; else bboxSide = bbox_left;
+		
+		if(tilemap_get_at_pixel(tiles, bboxSide + xSpeed, bbox_top) != 0 || tilemap_get_at_pixel(tiles, bboxSide + xSpeed, bbox_bottom) != 0){
+			if(xSpeed > 0) x = x - (x mod tileSize) + (tileSize - 1) - (bbox_right - x)
+			else x = x - (x mod tileSize)  - (bbox_left - x)
+			xSpeed = 0
 		}
+		
+		//vertical
+		if(ySpeed > 0) bboxSide = bbox_bottom; else bboxSide = bbox_top;
+		
+		if(tilemap_get_at_pixel(tiles, bbox_left, bboxSide + ySpeed) != 0 || tilemap_get_at_pixel(tiles, bbox_right, bboxSide + ySpeed) != 0){
+			if(ySpeed > 0) y = y - (y mod tileSize) + (tileSize - 1) - (bbox_bottom - y)
+			else y = y - (y mod tileSize)  - (bbox_top - y)
+			ySpeed = 0
+		}
+		
 		y += ySpeed;
+		x += xSpeed;
 	
 		//Sprites
 		sprite_index = sPlayerWalk
@@ -40,7 +60,7 @@ if(control){
 	}
 }
 
-show_debug_message(yy)
+
 
 
 

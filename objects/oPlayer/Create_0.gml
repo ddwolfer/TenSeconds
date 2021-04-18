@@ -24,3 +24,9 @@ death = false;
 damaged = false;
 
 image_speed = 0.3
+
+//Tile collision
+layerID = layer_get_id("Tiles")
+tiles = layer_tilemap_get_id(layerID)
+
+tileSize = 16
