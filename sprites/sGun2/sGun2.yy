@@ -24,12 +24,12 @@
   "gridX": 1,
   "gridY": 1,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"19d4ea83-7040-4b74-aa49-8f19a30c637d","path":"sprites/sGun/sGun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"19d4ea83-7040-4b74-aa49-8f19a30c637d","path":"sprites/sGun/sGun.yy",},"LayerId":{"name":"dc7be53b-5905-469f-865f-36a8f7b18d54","path":"sprites/sGun/sGun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sGun","path":"sprites/sGun/sGun.yy",},"resourceVersion":"1.0","name":"19d4ea83-7040-4b74-aa49-8f19a30c637d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"19d4ea83-7040-4b74-aa49-8f19a30c637d","path":"sprites/sGun2/sGun2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"19d4ea83-7040-4b74-aa49-8f19a30c637d","path":"sprites/sGun2/sGun2.yy",},"LayerId":{"name":"dc7be53b-5905-469f-865f-36a8f7b18d54","path":"sprites/sGun2/sGun2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGun2","path":"sprites/sGun2/sGun2.yy",},"resourceVersion":"1.0","name":"19d4ea83-7040-4b74-aa49-8f19a30c637d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sGun","path":"sprites/sGun/sGun.yy",},
+    "spriteId": {"name":"sGun2","path":"sprites/sGun2/sGun2.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"12bff506-3db4-4584-bcf1-6fa5f81a0179","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19d4ea83-7040-4b74-aa49-8f19a30c637d","path":"sprites/sGun/sGun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d63a9ad3-22ec-40f4-a0cc-4390b67881ea","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19d4ea83-7040-4b74-aa49-8f19a30c637d","path":"sprites/sGun2/sGun2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sGun","path":"sprites/sGun/sGun.yy",},
+    "parent": {"name":"sGun2","path":"sprites/sGun2/sGun2.yy",},
     "resourceVersion": "1.3",
-    "name": "sGun",
+    "name": "sGun2",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Guns",
+    "path": "folders/Sprites/Player/Guns.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sGun",
+  "name": "sGun2",
   "tags": [],
   "resourceType": "GMSprite",
 }
