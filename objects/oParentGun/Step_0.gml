@@ -9,5 +9,5 @@ if(mouseLeft and canShoot) {
 	instance_create_layer(x, y, "Bullet", bulletType)
 	canShoot = false
 	alarm[0] = 30 / attackSpeed
-	alarm[1] = activeTimeLeft * 60
+	alarm[1] = activeTimeLeft * room_speed
 }
