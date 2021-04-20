@@ -1,6 +1,7 @@
 {
   "resources": [
-    {"id":{"name":"sGunTimeBar","path":"sprites/sGunTimeBar/sGunTimeBar.yy",},"order":7,},
+    {"id":{"name":"rDwolfTEST","path":"rooms/rDwolfTEST/rDwolfTEST.yy",},"order":4,},
+    {"id":{"name":"sTimeBar","path":"sprites/sTimeBar/sTimeBar.yy",},"order":4,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":1,},
     {"id":{"name":"oPlayerDisplay","path":"objects/oPlayerDisplay/oPlayerDisplay.yy",},"order":2,},
     {"id":{"name":"oBullet3","path":"objects/oBullet3/oBullet3.yy",},"order":6,},
@@ -23,6 +24,7 @@
     {"id":{"name":"oParentGun","path":"objects/oParentGun/oParentGun.yy",},"order":2,},
     {"id":{"name":"sMenu","path":"sprites/sMenu/sMenu.yy",},"order":0,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":1,},
+    {"id":{"name":"sPlayerDeath","path":"sprites/sPlayerDeath/sPlayerDeath.yy",},"order":5,},
     {"id":{"name":"sWallTileSetsNew","path":"sprites/sWallTileSetsNew/sWallTileSetsNew.yy",},"order":6,},
     {"id":{"name":"sPlayerWalk","path":"sprites/sPlayerWalk/sPlayerWalk.yy",},"order":2,},
     {"id":{"name":"oGun2","path":"objects/oGun2/oGun2.yy",},"order":3,},
@@ -34,6 +36,7 @@
     {"id":{"name":"Wall_TileSets","path":"tilesets/Wall_TileSets/Wall_TileSets.yy",},"order":0,},
     {"id":{"name":"oParentEnemy","path":"objects/oParentEnemy/oParentEnemy.yy",},"order":3,},
     {"id":{"name":"button_box_init","path":"scripts/button_box_init/button_box_init.yy",},"order":0,},
+    {"id":{"name":"sKeyBoardESign","path":"sprites/sKeyBoardESign/sKeyBoardESign.yy",},"order":0,},
     {"id":{"name":"rChowdog","path":"rooms/rChowdog/rChowdog.yy",},"order":3,},
     {"id":{"name":"sMenuTitle","path":"sprites/sMenuTitle/sMenuTitle.yy",},"order":1,},
     {"id":{"name":"sPalette","path":"sprites/sPalette/sPalette.yy",},"order":2,},
@@ -75,6 +78,7 @@
     {"roomId":{"name":"r_menu","path":"rooms/r_menu/r_menu.yy",},},
     {"roomId":{"name":"r_palette","path":"rooms/r_palette/r_palette.yy",},},
     {"roomId":{"name":"rChowdog","path":"rooms/rChowdog/rChowdog.yy",},},
+    {"roomId":{"name":"rDwolfTEST","path":"rooms/rDwolfTEST/rDwolfTEST.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -99,7 +103,7 @@
     {"folderPath":"folders/Sprites/Player.yy","order":9,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/System.yy","order":7,"resourceVersion":"1.0","name":"System","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/System.yy","order":10,"resourceVersion":"1.0","name":"System","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/Player/Guns.yy","order":5,"resourceVersion":"1.0","name":"Guns","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Player/Guns.yy","order":3,"resourceVersion":"1.0","name":"Guns","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Player.yy","order":8,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Enemy.yy","order":11,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemy.yy","order":9,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMFolder",},
