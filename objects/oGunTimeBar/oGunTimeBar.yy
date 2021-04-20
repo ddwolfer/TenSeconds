@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sGunTimeBar",
-    "path": "sprites/sGunTimeBar/sGunTimeBar.yy",
+    "name": "sTimeBar",
+    "path": "sprites/sTimeBar/sTimeBar.yy",
   },
   "solid": false,
   "visible": true,
