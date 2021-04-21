@@ -29,4 +29,9 @@ StartCountGunTime = true
 MaxHp = 100
 Hp = 100
 
+//getHurt
+PlayerGetHurt = false
+HurtShaderAlpha = 1.0
+sh_hurtAlpha = shader_get_uniform(shPlayerGetHurt, "hurtalpha")
+
 

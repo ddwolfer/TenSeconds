@@ -1,6 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
 draw_self()
+
+
+
+if( PlayerGetHurt ){	
+	shader_set(shPlayerGetHurt)
+	
+	shader_set_uniform_f( sh_hurtAlpha, HurtShaderAlpha )
+	
+	draw_self()
+	shader_reset()
+	HurtShaderAlpha += -0.02
+}
+
+if( HurtShaderAlpha <= 0 ){
+	PlayerGetHurt = false
+	HurtShaderAlpha = 1.0
+}
 
 
 //life bar

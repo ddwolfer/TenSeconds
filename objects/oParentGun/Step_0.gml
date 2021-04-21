@@ -10,7 +10,8 @@ if(PlayerPickGun and instance_exists(oPlayer)){
 		y = oPlayer.y
 
 		if(mouseLeft and canShoot) {
-			instance_create_layer(x, y, "Bullet", bulletType)
+			var BulletShoot = instance_create_layer(x, y, "Bullet", bulletType)
+			BulletShoot.BulletDamage = GunDamage
 			canShoot = false
 			alarm[0] = 30 / attackSpeed
 			gunShootOnce = true

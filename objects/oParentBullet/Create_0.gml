@@ -9,3 +9,5 @@ layerID = layer_get_id("Tiles")
 tiles = layer_tilemap_get_id(layerID)
 
 tileSize = 16
+
+BulletDamage = 0

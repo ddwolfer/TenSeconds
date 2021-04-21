@@ -1,7 +1,11 @@
 if(!instance_exists(target)) return;
+//body attack 基礎撞擊傷害
+if( place_meeting(x,y,oPlayer) and not oPlayer.PlayerGetHurt){
+	oPlayer.Hp -= HitDamage
+	oPlayer.PlayerGetHurt = true
+}
 
-switch(state){
-	
+switch(state){	
 	case ENEMYSTATE.IDLE:
 		counter += 1
 		xx = 0
@@ -19,7 +23,7 @@ switch(state){
 		if(collision_circle(x, y, chaseRange, target, false, false)){
 			state = ENEMYSTATE.CHASE
 		}
-		show_debug_message("idle")
+		show_debug_message("[oParentEnemy Step 26]idle")
 		break
 	
 	case ENEMYSTATE.WANDER:
@@ -34,8 +38,8 @@ switch(state){
 					xx = lengthdir_x(10, dir)
 					yy+= lengthdir_y(10, dir)
 					counter = 0
-					show_debug_message(xx)
-					show_debug_message(dir)
+					show_debug_message("[oParentEnemy Step 41]"+string(xx))
+					show_debug_message("[oParentEnemy Step 42]" + string(dir))
 			}
 		}
 		
@@ -53,7 +57,7 @@ switch(state){
 		if(self.y - target.y < 0) yy = 1
 		else if(self.y - target.y > 0) yy = -1
 		else if(self.y - target.y == 0) yy = 0
-		show_debug_message("chase")
+		show_debug_message("[oParentEnemy Step 60]chase")
 		if(!collision_circle(x, y, chaseRange, target, false, false)){
 			state = ENEMYSTATE.IDLE
 		}

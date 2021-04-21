@@ -10,7 +10,7 @@ enum ENEMYSTATE{
 }
 
 state = ENEMYSTATE.IDLE
-accell = 1
+accell = 0.5
 layerID = layer_get_id("Tiles")
 tiles = layer_tilemap_get_id(layerID)
 
@@ -21,3 +21,15 @@ chaseRange = 50
 target = oPlayer
 
 counter = 0
+//Attack
+HitDamage = 5
+HitCoolDown = 1
+canHit = true
+//Hp
+MaxHp = 100
+Hp = 100
+//get Hurt
+EnemyGetHurt = false
+HurtShaderAlpha = 1.0
+sh_hurtAlpha = shader_get_uniform(shPlayerGetHurt, "hurtalpha")
+
