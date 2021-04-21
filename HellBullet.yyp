@@ -6,6 +6,7 @@
     {"id":{"name":"sExit","path":"sprites/sExit/sExit.yy",},"order":1,},
     {"id":{"name":"oSlimeShoot","path":"objects/oSlimeShoot/oSlimeShoot.yy",},"order":1,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":1,},
+    {"id":{"name":"r_EndRoom","path":"rooms/r_EndRoom/r_EndRoom.yy",},"order":15,},
     {"id":{"name":"sBulletSlime2","path":"sprites/sBulletSlime2/sBulletSlime2.yy",},"order":1,},
     {"id":{"name":"shPlayerGetHurt","path":"shaders/shPlayerGetHurt/shPlayerGetHurt.yy",},"order":2,},
     {"id":{"name":"oPlayerDisplay","path":"objects/oPlayerDisplay/oPlayerDisplay.yy",},"order":2,},
@@ -89,6 +90,7 @@
     {"id":{"name":"r_Room04","path":"rooms/r_Room04/r_Room04.yy",},"order":8,},
     {"id":{"name":"oParentSolid","path":"objects/oParentSolid/oParentSolid.yy",},"order":0,},
     {"id":{"name":"oSlimeSectorShoot","path":"objects/oSlimeSectorShoot/oSlimeSectorShoot.yy",},"order":5,},
+    {"id":{"name":"oEndRoom","path":"objects/oEndRoom/oEndRoom.yy",},"order":8,},
     {"id":{"name":"r_menu","path":"rooms/r_menu/r_menu.yy",},"order":1,},
     {"id":{"name":"sColorPicker","path":"sprites/sColorPicker/sColorPicker.yy",},"order":0,},
     {"id":{"name":"sWhiteBlock","path":"sprites/sWhiteBlock/sWhiteBlock.yy",},"order":5,},
@@ -128,6 +130,7 @@
     {"roomId":{"name":"r_Room08","path":"rooms/r_Room08/r_Room08.yy",},},
     {"roomId":{"name":"r_Tutorial","path":"rooms/r_Tutorial/r_Tutorial.yy",},},
     {"roomId":{"name":"r_Credit","path":"rooms/r_Credit/r_Credit.yy",},},
+    {"roomId":{"name":"r_EndRoom","path":"rooms/r_EndRoom/r_EndRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

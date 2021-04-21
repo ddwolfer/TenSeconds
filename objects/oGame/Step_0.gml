@@ -36,11 +36,3 @@ if( MenuInGameState == 1 ){
 		game_end()
 	}
 }
-
-if(instance_exists(oPlayer)){
-	with(oPlayer){
-		if(instance_position(x, y, oExit)){
-			room_goto(r_Room01)
-		}
-	}
-}

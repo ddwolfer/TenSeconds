@@ -5,8 +5,9 @@ if( doTransition and showExit){
 	draw_set_alpha(transitionAlpha)
 	draw_rectangle(0,0,view_get_wport(view_surface_id[0]), view_get_hport(view_surface_id[0]), false)
 	draw_set_alpha(1)
+	transitionAlpha = approach( transitionAlpha , 1.0 , 0.025 )
 	
-	if( transitionAlpha >= 1.0 ){
+	if( transitionAlpha == 1.0 ){
 		RoomPassCount += 1
 		room_goto( target_room )
 	}
@@ -44,6 +45,4 @@ if( showExit ){
 	if( not point_in_rectangle( x, y, CaX1, CaY1, CaX2, CaY2)){
 		draw_sprite_ext(sExitArror,0,ArrorX,ArrorY,4,4, ArrorDir ,-1,1)
 	}
-	show_debug_message(string( point_direction(oPlayer.x, oPlayer.y, x, y)) )
-	transitionAlpha = approach( transitionAlpha , 1.0 , 0.025 )
 }

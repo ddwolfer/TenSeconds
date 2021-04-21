@@ -12,7 +12,7 @@ randomize()
 globalvar AllRoom,RoomList,RoomPassCount;
 RoomPassCount = 0
 AllRoom = [r_Room01, r_Room02, r_Room03, r_Room04, r_Room05, r_Room06, r_Room07, r_Room08]
-RoomList = [noone , noone, noone]
+RoomList = [noone , noone, noone, r_EndRoom]
 var i
 for( i=0 ; i < 3 ; i++){
 	var roomnumber = irandom(7)
