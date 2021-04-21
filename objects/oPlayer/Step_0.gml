@@ -4,7 +4,7 @@
 depth = -y
 getInput();
 //死亡判定
-show_debug_message("[oPlayer Step 07]" + string(HurtShaderAlpha))
+//show_debug_message("[oPlayer Step 07]" + string(HurtShaderAlpha))
 if(death){
 	if(floor(image_index)>=9){
 		instance_destroy(id)
