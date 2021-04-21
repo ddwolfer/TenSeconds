@@ -1,5 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
+if(instance_exists(oExit)){
+	if(!instance_exists(oParentEnemy)){
+		oExit.showExit = true
+	}
+}
+
+if( GameOverFlag ){
+	if( GameOverAlpha >= 0.25 ){
+		if( button_group_click(GameOverButton) == 0 ){ // back menu Button
+			window_set_cursor(cr_default)
+			GameOverFlag = false
+			GameOverAlpha = 0
+			room_goto(r_menu)
+		}else if( button_group_click(GameOverButton) == 1 ){ // Quit Button
+			game_end()
+		}
+	}
+}
+
 if( MenuInGameState == 1 ){
 	if( button_group_click(MenuInGameButton) == 0 ){ //resume Button
 		MenuInGameState = MenuInGameState.hide

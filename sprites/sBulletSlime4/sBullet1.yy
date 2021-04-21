@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 2,
-  "bbox_right": 5,
-  "bbox_top": 2,
-  "bbox_bottom": 5,
+  "bbox_left": 1,
+  "bbox_right": 6,
+  "bbox_top": 1,
+  "bbox_bottom": 6,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"58012547-34f7-42ce-b5a8-688b0fa28a71","path":"sprites/sBulletSlime2/sBulletSlime2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"58012547-34f7-42ce-b5a8-688b0fa28a71","path":"sprites/sBulletSlime2/sBulletSlime2.yy",},"LayerId":{"name":"70236eb7-87a6-46e0-adb7-5a9f091ee410","path":"sprites/sBulletSlime2/sBulletSlime2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBulletSlime2","path":"sprites/sBulletSlime2/sBulletSlime2.yy",},"resourceVersion":"1.0","name":"58012547-34f7-42ce-b5a8-688b0fa28a71","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"58012547-34f7-42ce-b5a8-688b0fa28a71","path":"sprites/sBullet1/sBullet1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"58012547-34f7-42ce-b5a8-688b0fa28a71","path":"sprites/sBullet1/sBullet1.yy",},"LayerId":{"name":"70236eb7-87a6-46e0-adb7-5a9f091ee410","path":"sprites/sBullet1/sBullet1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sBullet1","path":"sprites/sBullet1/sBullet1.yy",},"resourceVersion":"1.0","name":"58012547-34f7-42ce-b5a8-688b0fa28a71","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sBulletSlime2","path":"sprites/sBulletSlime2/sBulletSlime2.yy",},
+    "spriteId": {"name":"sBullet1","path":"sprites/sBullet1/sBullet1.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"da62359f-58c7-46ab-ab11-c166a18a5f0f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58012547-34f7-42ce-b5a8-688b0fa28a71","path":"sprites/sBulletSlime2/sBulletSlime2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d60ec61a-22d8-4023-bdb6-ae7f98bc6d63","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58012547-34f7-42ce-b5a8-688b0fa28a71","path":"sprites/sBullet1/sBullet1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 4,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sBulletSlime2","path":"sprites/sBulletSlime2/sBulletSlime2.yy",},
+    "parent": {"name":"sBullet1","path":"sprites/sBullet1/sBullet1.yy",},
     "resourceVersion": "1.3",
-    "name": "sBulletSlime2",
+    "name": "sBullet1",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Bullet",
-    "path": "folders/Sprites/Enemy/Bullet.yy",
+    "name": "Guns",
+    "path": "folders/Sprites/Player/Guns.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sBulletSlime2",
+  "name": "sBullet1",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Bullet",
-    "path": "folders/Sprites/Enemy/Bullet.yy",
+    "name": "Enemy",
+    "path": "folders/Sprites/Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBulletSlime2",

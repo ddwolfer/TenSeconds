@@ -7,6 +7,7 @@ getInput();
 //show_debug_message("[oPlayer Step 07]" + string(HurtShaderAlpha))
 if(death){
 	if(floor(image_index)>=9){
+		oGame.alarm[0] = room_speed
 		instance_destroy(id)
 	}
 }

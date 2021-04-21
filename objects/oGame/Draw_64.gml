@@ -2,7 +2,23 @@
 // You can write your code in this editor
 getInput()
 
-if(room != r_menu ){
+if( GameOverFlag ){
+	GameOverAlpha = approach(GameOverAlpha,0.25,0.02)
+	draw_set_alpha(GameOverAlpha)
+	draw_rectangle_color(0,0,ViewW,ViewH,c_black,c_black,c_black,c_black,false)
+	draw_set_font(GameOverFont)
+	draw_set_alpha(GameOverAlpha*4)
+	draw_text(ViewW/2,ViewH/3,"Game Over")
+	draw_set_alpha(1)
+	
+	if( GameOverAlpha >= 0.25 ){
+		window_set_cursor(cr_default)
+		draw_set_font(MenuInGameFont)
+		draw_button_sprite_group(GameOverButton,sMenuButton,sMenuButtonPressed)
+	}
+}
+
+if(room != r_menu and not GameOverFlag){
 	switch(MenuInGameState){
 		case 0 :
 			if(select){
