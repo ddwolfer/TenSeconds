@@ -1,4 +1,11 @@
-if(!instance_exists(target)) return;
+depth = -y
+if(!instance_exists(target)){
+	state = ENEMYSTATE.IDLE
+	return;
+}
+if( Hp / MaxHp < 1.0){
+	chaseRange = 10000
+}
 //body attack 基礎撞擊傷害
 if( place_meeting(x,y,oPlayer) and not oPlayer.PlayerGetHurt){
 	oPlayer.Hp -= HitDamage
@@ -23,7 +30,7 @@ switch(state){
 		if(collision_circle(x, y, chaseRange, target, false, false)){
 			state = ENEMYSTATE.CHASE
 		}
-		show_debug_message("[oParentEnemy Step 26]idle")
+		//show_debug_message("[oParentEnemy Step 26]idle")
 		break
 	
 	case ENEMYSTATE.WANDER:
@@ -38,8 +45,8 @@ switch(state){
 					xx = lengthdir_x(10, dir)
 					yy+= lengthdir_y(10, dir)
 					counter = 0
-					show_debug_message("[oParentEnemy Step 41]"+string(xx))
-					show_debug_message("[oParentEnemy Step 42]" + string(dir))
+					//show_debug_message("[oParentEnemy Step 41]"+string(xx))
+					//show_debug_message("[oParentEnemy Step 42]" + string(dir))
 			}
 		}
 		
@@ -57,7 +64,11 @@ switch(state){
 		if(self.y - target.y < 0) yy = 1
 		else if(self.y - target.y > 0) yy = -1
 		else if(self.y - target.y == 0) yy = 0
-		show_debug_message("[oParentEnemy Step 60]chase")
+		//show_debug_message("[oParentEnemy Step 60]chase")
+		if( abs(self.x - target.x) > 2 ){
+			if(xx == 1) image_xscale = 1
+			if(xx == -1) image_xscale = -1
+		}
 		if(!collision_circle(x, y, chaseRange, target, false, false)){
 			state = ENEMYSTATE.IDLE
 		}
@@ -92,11 +103,5 @@ if(xx != 0 || yy != 0){
 		
 	y += ySpeed;
 	x += xSpeed;
-	
-	//Sprites
-	sprite_index = sEnemy
-	
-	if(xSpeed > 0) image_xscale = 1;
-	else if(xSpeed < 0) image_xscale = -1;
 	
 }

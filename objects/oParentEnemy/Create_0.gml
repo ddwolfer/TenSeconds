@@ -27,7 +27,7 @@ HitCoolDown = 1
 canHit = true
 //Hp
 MaxHp = 100
-Hp = 100
+Hp = MaxHp
 //get Hurt
 EnemyGetHurt = false
 HurtShaderAlpha = 1.0
