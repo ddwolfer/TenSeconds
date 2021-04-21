@@ -35,7 +35,7 @@
     "path": "folders/Objects/Enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oSlimeRange",
+  "name": "oSlimeShoot",
   "tags": [],
   "resourceType": "GMObject",
 }
