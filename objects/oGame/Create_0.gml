@@ -36,7 +36,7 @@ ViewH = view_get_hport(view_surface_id[0])
 
 var ButtonW = ViewW/16
 var ButtonH = ViewH/32
-var ButtonSpace = ViewH/8
+var ButtonSpace = ViewH/7
 
 ResumeButton = button_box_init("Resume", ViewW/2 - ButtonW, ViewH/2 - ButtonH - ButtonSpace,  ViewW/2 + ButtonW, ViewH/2 + ButtonH - ButtonSpace)
 BackMenuButton = button_box_init("Back to menu", ViewW/2 - ButtonW, ViewH/2 - ButtonH ,  ViewW/2 + ButtonW, ViewH/2 + ButtonH )

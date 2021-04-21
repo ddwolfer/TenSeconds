@@ -5,9 +5,9 @@ MenuFont = font_add("NewRocker-Regular.ttf", 20,0 ,0 ,0 , 65535)
 ViewW = view_get_wport(view_surface_id[0])
 ViewH = view_get_hport(view_surface_id[0])
 
-var ButtonW = ViewW/16
-var ButtonH = ViewH/32
-var ButtonSpace = ViewH/8
+var ButtonW = sprite_get_width(sMenuButton)/2
+var ButtonH = sprite_get_height(sMenuButton)/2
+var ButtonSpace = ViewH/7
 
 StartButton = button_box_init("Start", ViewW/2 - ButtonW, ViewH/2 - ButtonH,  ViewW/2 + ButtonW, ViewH/2 + ButtonH )
 CreditsButton = button_box_init("Credits", ViewW/2 - ButtonW, ViewH/2 - ButtonH + ButtonSpace,  ViewW/2 + ButtonW, ViewH/2 + ButtonH +ButtonSpace)
