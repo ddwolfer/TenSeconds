@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 CreditsFont = font_add("NewRocker-Regular.ttf", 30,0 ,0 ,0 , 65535)
-CreditsText = "Creators:\nDDwolf\nChowDog"
+CreditsText = "Creators:\nDDwolf\nChowDog\nmore games at chowdog.itch.io"
 
 ViewW = view_get_wport(view_surface_id[0])
 ViewH = view_get_hport(view_surface_id[0])
