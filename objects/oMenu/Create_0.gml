@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+TitleFont = font_add("NewRocker-Regular.ttf", 75,0 ,0 ,0 , 65535)
 MenuFont = font_add("NewRocker-Regular.ttf", 20,0 ,0 ,0 , 65535)
 ViewW = view_get_wport(view_surface_id[0])
 ViewH = view_get_hport(view_surface_id[0])

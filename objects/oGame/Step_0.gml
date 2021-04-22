@@ -1,10 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
+if( room==r_menu or room==r_Credit ){
+	if(audio_is_playing(sd_Music))
+		audio_stop_sound(sd_Music)
+}
 
+if(room != r_menu and room != r_Credit ){
+	if(not audio_is_playing(sd_Music))
+		audio_play_sound(sd_Music,10,true)
+}
 
 if(instance_exists(oExit)){
 	if(!instance_exists(oParentEnemy)){
 		oExit.showExit = true
+		oExit.PlayerAudio = true
 	}
 }
 

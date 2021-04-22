@@ -10,6 +10,7 @@ if( Hp / MaxHp < 1.0){
 if( place_meeting(x,y,oPlayer) and not oPlayer.PlayerGetHurt){
 	oPlayer.Hp -= HitDamage
 	oPlayer.PlayerGetHurt = true
+	audio_play_sound(sd_PlayerGetHurt,10,false)
 }
 
 switch(state){	

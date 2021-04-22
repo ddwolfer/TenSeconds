@@ -12,6 +12,7 @@ if(PlayerPickGun and instance_exists(oPlayer)){
 
 		if(mouseLeft and canShoot) {
 			var BulletShoot = instance_create_layer(x, y, "Bullet", bulletType)
+			audio_play_sound(sd_Shoot2, 10, false)
 			BulletShoot.BulletDamage = GunDamage
 			canShoot = false
 			alarm[0] = 30 / attackSpeed
