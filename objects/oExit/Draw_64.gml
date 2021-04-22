@@ -9,6 +9,8 @@ if( doTransition and showExit){
 	
 	if( transitionAlpha == 1.0 ){
 		RoomPassCount += 1
+		oCreateGun.roomStartFlag = false
+		oCreateGun.alarm[0] = 0.6 * room_speed
 		room_goto( target_room )
 	}
 }
