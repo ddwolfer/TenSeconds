@@ -26,8 +26,8 @@ GunKeepTime = 0
 StartCountGunTime = true
 
 //HpSetting
-MaxHp = 10
-Hp = 10
+MaxHp = 150
+Hp = 150
 
 //getHurt
 PlayerGetHurt = false
