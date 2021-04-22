@@ -1,3 +1,6 @@
+x += random_range(-screenShake, screenShake)
+y += random_range(-screenShake, screenShake)
+
 if(!instance_exists(oPlayer)) exit
 
 var mouseDisX = mouse_x - x

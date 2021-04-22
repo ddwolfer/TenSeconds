@@ -15,6 +15,7 @@ if( place_meeting(x,y,oPlayer) and not oPlayer.PlayerGetHurt){
 	oPlayer.Hp -= HitDamage
 	oPlayer.PlayerGetHurt = true
 	audio_play_sound(sd_PlayerGetHurt,10,false)
+	addScreenShake(8, 16)
 }
 
 switch(state){	

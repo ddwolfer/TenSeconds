@@ -8,4 +8,5 @@ if( place_meeting(x,y,oPlayer) and not oPlayer.PlayerGetHurt){
 	audio_play_sound(sd_PlayerGetHurt,10,false)
 	oPlayer.Hp -= BulletDamage
 	oPlayer.PlayerGetHurt = true
+	addScreenShake(8, 16)
 }
