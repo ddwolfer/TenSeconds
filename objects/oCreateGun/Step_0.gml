@@ -3,6 +3,7 @@
 if(room == r_menu or room == r_Credit or room == r_EndRoom){
 	return
 }
+if(not roomStartFlag){return}
 
 GunList = ds_list_create()
 GunNumber = collision_rectangle_list(0,0,room_width,room_height,oParentGun,0,1,GunList,0)
