@@ -1,0 +1,1 @@
+text = "welcome to Slime Hell, press WASD to move, and mouse to aim"
