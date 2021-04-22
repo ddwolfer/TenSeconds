@@ -43,6 +43,10 @@ if(control){
 	
 	
 	if(xx != 0 || yy != 0){
+		if( !audio_is_playing(sd_PlayerWalk) ){
+			audio_play_sound(sd_PlayerWalk,10,false)
+		}
+		
 		dir = point_direction(0, 0, xx, yy)
 
 		var xSpeed = lengthdir_x(accell, dir)
