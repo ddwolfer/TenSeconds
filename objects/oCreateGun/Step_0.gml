@@ -3,6 +3,7 @@
 if(room == r_menu or room == r_Credit or room == r_EndRoom){
 	return
 }
+if(not roomStartFlag){return}
 
 GunList = ds_list_create()
 GunNumber = collision_rectangle_list(0,0,room_width,room_height,oParentGun,0,1,GunList,0)
@@ -13,7 +14,7 @@ var CaX2 = CaX1 + camera_get_view_width(cam);
 var CaY2 = CaY1 + camera_get_view_height(cam);
 
 
-if( GunNumber < 3 ){
+if( GunNumber < 5 ){
 	CreateFlag = true
 	show_debug_message("[oCreateGun Step]沒有槍拉")
 	show_debug_message("[oCreateGun Step]"+string(CaX1)+"|"+string(CaX2)+"|"+string(CaY1)+"|"+string(CaY2)+"|")
