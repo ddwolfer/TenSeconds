@@ -6,3 +6,4 @@ CreateFlag = true
 
 //Tile collision
 roomStartFlag = true
+GunNeedNumber = 6
