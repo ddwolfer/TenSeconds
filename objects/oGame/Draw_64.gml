@@ -18,7 +18,7 @@ if( GameOverFlag ){
 	}
 }
 
-if(room != r_menu and room != r_Credit and not GameOverFlag){
+if(room != r_menu and room != r_Credit and room!=r_EndRoom and not GameOverFlag){
 	switch(MenuInGameState){
 		case 0 :
 			if(select){
