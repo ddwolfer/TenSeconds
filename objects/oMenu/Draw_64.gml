@@ -5,7 +5,7 @@ var TitleX = ViewW/2
 var TitleY = ViewH/4
 
 draw_set_font(TitleFont)
-draw_text(TitleX,TitleY,"10 Seconds Gun")
+draw_text(TitleX,TitleY,"Slime Hell")
 //draw_sprite_ext(sMenuTitle,0,TitleX,TitleY,1.5,1.5,0,-1,1)
 
 draw_set_font(MenuFont)

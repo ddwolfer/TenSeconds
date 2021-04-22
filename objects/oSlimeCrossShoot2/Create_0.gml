@@ -6,4 +6,4 @@ MaxHp = 200
 Hp = 200
 
 canShoot = true
-ShootCoolDown = 0.25
+ShootCoolDown = 0.75
