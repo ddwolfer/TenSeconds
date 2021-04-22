@@ -13,7 +13,7 @@ var CaX2 = CaX1 + camera_get_view_width(cam);
 var CaY2 = CaY1 + camera_get_view_height(cam);
 
 
-if( GunNumber < 3 ){
+if( GunNumber < 5 ){
 	CreateFlag = true
 	show_debug_message("[oCreateGun Step]沒有槍拉")
 	show_debug_message("[oCreateGun Step]"+string(CaX1)+"|"+string(CaX2)+"|"+string(CaY1)+"|"+string(CaY2)+"|")

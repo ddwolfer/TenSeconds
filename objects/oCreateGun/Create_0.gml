@@ -5,6 +5,4 @@ GunNumber = 0
 CreateFlag = true
 
 //Tile collision
-
-
-tileSize = 16
+roomStartFlag = true
