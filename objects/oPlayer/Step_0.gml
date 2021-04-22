@@ -67,6 +67,19 @@ if(control){
 			ySpeed = 0
 		}
 		
+		if(place_meeting(x + xSpeed, y, oParentSolid)){
+			while(!place_meeting(x + sign(xSpeed), y, oParentSolid)){
+				x += sign(xSpeed);
+			}
+			xSpeed = 0;
+		}
+		if(place_meeting(x, y + ySpeed, oParentSolid)){
+		while(!place_meeting(x, y + sign(ySpeed), oParentSolid)){
+			y += sign(ySpeed);
+		}
+		ySpeed = 0;
+	}
+		
 		y += ySpeed;
 		x += xSpeed;
 	#endregion
