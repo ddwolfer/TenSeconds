@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(room == r_menu or room == r_Credit or room == r_EndRoom){
+if(room == r_menu or room == r_Credit or room == r_EndRoom or room == r_Tutorial){
 	return
 }
 if(not roomStartFlag){return}
@@ -14,7 +14,7 @@ var CaX2 = CaX1 + camera_get_view_width(cam);
 var CaY2 = CaY1 + camera_get_view_height(cam);
 
 
-if( GunNumber < 5 ){
+if( GunNumber < 6 ){
 	CreateFlag = true
 	show_debug_message("[oCreateGun Step]沒有槍拉")
 	show_debug_message("[oCreateGun Step]"+string(CaX1)+"|"+string(CaX2)+"|"+string(CaY1)+"|"+string(CaY2)+"|")
