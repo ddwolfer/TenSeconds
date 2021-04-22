@@ -1,5 +1,5 @@
 event_inherited()
 attackSpeed = 1
-GunDamage = 10
+GunDamage = 40
 
 bulletType = oBullet3
