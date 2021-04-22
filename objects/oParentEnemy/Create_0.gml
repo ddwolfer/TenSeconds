@@ -16,7 +16,7 @@ tiles = layer_tilemap_get_id(layerID)
 
 tileSize = 16
 
-chaseRange = 50
+chaseRange = 150
 
 target = oPlayer
 
@@ -26,7 +26,7 @@ HitDamage = 5
 HitCoolDown = 1
 canHit = true
 //Hp
-MaxHp = 100
+MaxHp = 180
 Hp = MaxHp
 //get Hurt
 EnemyGetHurt = false
