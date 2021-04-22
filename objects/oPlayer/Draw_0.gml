@@ -36,8 +36,3 @@ if(HaveGunFlag){
 if( collision_circle(x,y, sprite_width/2,oParentGun,-1,-1) and not HaveGunFlag){
 	draw_sprite_ext(sKeyBoardESign,0,x, y-sprite_height-2, 0.3, 0.3 ,0,-1,1)
 }
-
-//pick gun sign
-if( collision_circle(x,y, sprite_width/2,oSign,-1,-1)){
-	draw_sprite_ext(sKeyBoardESign,0,x, y-sprite_height-2, 0.3, 0.3 ,0,-1,1)
-}

@@ -1,0 +1,1 @@
+text = "The exit only appears when you kill all the enemies, KILL THEM ALL!!"
