@@ -1,0 +1,1 @@
+text = "welcome to xxxxxxxx, press WASD to move, and mouse to aim"
