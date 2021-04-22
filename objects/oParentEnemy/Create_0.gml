@@ -1,5 +1,5 @@
 image_speed = 0.3
-
+friction = 0.5
 enum ENEMYSTATE{
 	IDLE,
 	WANDER,

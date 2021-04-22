@@ -23,7 +23,7 @@ if( showExit ){
 	var ArrorX2 = 640 + 512
 	var ArrorY1 = 360 - 288
 	var ArrorY2 = 360 + 288
-	var ArrorDir = point_direction((CaX1+CaX2)/2, (CaY1+CaY2)/2, x+8, y+8)
+	var ArrorDir = point_direction((CaX1+CaX2)/2, (CaY1+CaY2)/2, x, y)
 	
 	if(ArrorDir>=0 and ArrorDir < 30){
 		ArrorX = ArrorX2
