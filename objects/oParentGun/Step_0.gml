@@ -30,5 +30,6 @@ if(PlayerPickGun and instance_exists(oPlayer)){
 		instance_destroy(self)
 		oPlayer.GunKeepTime = 0
 	}
+	if(x > mouse_x) image_yscale = -1
+	else image_yscale = 1
 }
-
