@@ -6,3 +6,4 @@ doTransition = false
 
 MonsterClearAudioFlag = false
 PlayerAudio = false
+depth = 20

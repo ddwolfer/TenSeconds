@@ -1,9 +1,7 @@
-depth = -y
-
 if(!instance_exists(oPlayer)) return;
 getInput()
 
-if(PlayerPickGun and instance_exists(oPlayer)){
+if(pickedGun and instance_exists(oPlayer)){
 	depth = oPlayer.depth -1 
 	image_angle = point_direction(x, y, mouse_x, mouse_y)
 	
@@ -26,10 +24,12 @@ if(PlayerPickGun and instance_exists(oPlayer)){
 			alarm[1] = activeTimeLeft * room_speed
 		}
 	}
-	if(  keyboard_check_pressed(ord("F")) ){
+	/*if(  keyboard_check_pressed(ord("F")) ){
 		instance_destroy(self)
 		oPlayer.GunKeepTime = 0
-	}
+	}*/
 	if(x > mouse_x) image_yscale = -1
 	else image_yscale = 1
+}else if (!pickedGun){
+	depth = 100
 }

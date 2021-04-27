@@ -44,6 +44,7 @@
     {"id":{"name":"button_group_init","path":"scripts/button_group_init/button_group_init.yy",},"order":6,},
     {"id":{"name":"oCursor","path":"objects/oCursor/oCursor.yy",},"order":0,},
     {"id":{"name":"sCursor","path":"sprites/sCursor/sCursor.yy",},"order":1,},
+    {"id":{"name":"Script13","path":"scripts/Script13/Script13.yy",},"order":6,},
     {"id":{"name":"oPlayerController","path":"objects/oPlayerController/oPlayerController.yy",},"order":3,},
     {"id":{"name":"oParentGun","path":"objects/oParentGun/oParentGun.yy",},"order":2,},
     {"id":{"name":"sEnemySlime4","path":"sprites/sEnemySlime4/sEnemySlime4.yy",},"order":6,},

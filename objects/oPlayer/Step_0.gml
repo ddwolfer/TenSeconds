@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //image_angle = point_direction(x, y, mouse_x, mouse_y);
-depth = -y
+
 getInput();
 //死亡判定
 //show_debug_message("[oPlayer Step 07]" + string(HurtShaderAlpha))
@@ -23,9 +23,18 @@ if(control){
 		//show_debug_message("[Player strp]碰到槍了")
 		if( keyboard_check_pressed(ord("E")) ){
 			pickGun = instance_nearest(x,y,oParentGun)
-			pickGun.PlayerPickGun = true
+			pickGun.pickedGun = true
 			HaveGunFlag = true
 			GunKeepTime = 10
+		}
+	}else if( collision_circle(x,y, sprite_width/2,oParentGun,-1,-1) and HaveGunFlag){
+		if( keyboard_check_pressed(ord("E")) ){
+			instance_destroy(pickGun)
+			pickGun = instance_nearest(x,y,oParentGun)
+			pickGun.pickedGun = true
+			HaveGunFlag = true
+			GunKeepTime = 10
+			alarm[0] = -1
 		}
 	}
 	if( HaveGunFlag and mouseLeft and StartCountGunTime){
@@ -43,7 +52,7 @@ if(control){
 	
 	
 	if(xx != 0 || yy != 0){
-		if( !audio_is_playing(sd_PlayerWalk) ){
+		if( animationHitFrame(0) || animationHitFrame(2) ){
 			audio_play_sound(sd_PlayerWalk,10,false)
 		}
 		
