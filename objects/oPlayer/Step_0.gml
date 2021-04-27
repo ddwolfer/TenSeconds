@@ -35,6 +35,7 @@ if(control){
 			HaveGunFlag = true
 			GunKeepTime = 10
 			alarm[0] = -1
+			StartCountGunTime = true
 		}
 	}
 	if( HaveGunFlag and mouseLeft and StartCountGunTime){
