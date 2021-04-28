@@ -1,4 +1,11 @@
 depth = -y
+
+if( (direction >= 0 and direction < 90-directionRange) or (direction >= 270+directionRange and direction < 360)){
+	image_xscale = 1 * image_ratio
+}else if( ( direction >= 90+directionRange and direction < 270-directionRange ) ){
+	image_xscale = -1 * image_ratio
+}
+
 if(!instance_exists(target)){
 	state = ENEMYSTATE.IDLE
 	return;
@@ -23,7 +30,22 @@ switch(state){
 		if(counter >= room_speed * 1){
 			var change = choose(0, 1)
 			switch(change){
-				case 0: state = ENEMYSTATE.WANDER
+				case 0: 
+					createWanderPos = true
+					while(createWanderPos){
+						wanderX = x+random_range(-wanderRange,wanderRange)
+						wanderY = y+random_range(-wanderRange,wanderRange)
+						show_debug_message("X:"+string(wanderX)+"|Y:"+string(wanderY))
+						show_debug_message("tilemap 判定"+string(tilemap_get_at_pixel(tiles, wanderX, wanderY)))
+						if(tilemap_get_at_pixel(tiles, wanderX, wanderY) <= 0 ){
+							createWanderPos = false
+						}
+					}
+					mp_potential_path(wanderPath, wanderX, wanderY, wanderSpeed, 4,false)
+					path_start( wanderPath, wanderSpeed, path_action_stop, true )
+					state = ENEMYSTATE.WANDER
+					
+					break
 				case 1: 
 					counter = 0
 					break
@@ -37,7 +59,7 @@ switch(state){
 		break
 	
 	case ENEMYSTATE.WANDER:
-		counter += 1
+		/*counter += 1
 		
 		if(counter >= room_speed * 3){
 			var change = choose(0, 1)
@@ -51,10 +73,13 @@ switch(state){
 					//show_debug_message("[oParentEnemy Step 41]"+string(xx))
 					//show_debug_message("[oParentEnemy Step 42]" + string(dir))
 			}
-		}
+		}*/
 		
 		if(collision_circle(x, y, chaseRange, target, false, false)){
 			state = ENEMYSTATE.CHASE
+		}
+		if( path_index >= 1.0 ){
+			state = ENEMYSTATE.IDLE
 		}
 		
 		break
@@ -80,11 +105,10 @@ switch(state){
 		enemyPath = path_add()
 		mp_potential_path(enemyPath, oPlayer.x, oPlayer.y, chaseSpeed, 4,false)
 		path_start( enemyPath, chaseSpeed, path_action_stop, true )
-		show_debug_message(path_position)
 		break
 	
 }
-	
+/*	
 if(xx != 0 || yy != 0){
 	dir = point_direction(0, 0, xx, yy)
 
@@ -109,8 +133,6 @@ if(xx != 0 || yy != 0){
 		else y = y - (y mod tileSize)  - (bbox_top - y)
 		ySpeed = 0
 	}
-		
 	y += ySpeed;
 	x += xSpeed;
-	
-}
+}*/

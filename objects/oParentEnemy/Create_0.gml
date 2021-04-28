@@ -1,5 +1,6 @@
 image_speed = 0.3
 friction = 0.5
+image_ratio = abs(image_xscale)
 enum ENEMYSTATE{
 	IDLE,
 	WANDER,
@@ -13,8 +14,16 @@ state = ENEMYSTATE.IDLE
 accell = 0.5
 layerID = layer_get_id("Tiles")
 tiles = layer_tilemap_get_id(layerID)
-
+directionRange = 10
 tileSize = 16
+//wander setting
+createWanderPos = true
+wanderRange = 32
+wanderPath = path_add()
+wanderSpeed = 0.25
+wanderX = 0
+wanderY = 0
+
 //chase setting
 chaseRange = 150
 chaseSpeed = 0.5
