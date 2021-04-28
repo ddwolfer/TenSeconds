@@ -13,6 +13,7 @@ death = false;
 damaged = false;
 
 image_speed = 0.3
+depth = 0
 
 //Tile collision
 layerID = layer_get_id("Tiles")
@@ -24,6 +25,7 @@ tileSize = 16
 HaveGunFlag = false
 GunKeepTime = 0
 StartCountGunTime = true
+pickGun = noone
 
 //HpSetting
 MaxHp = 150

@@ -1,5 +1,5 @@
 activeTimeLeft = 10
-PlayerPickGun = false
+pickedGun = false
 gunShootOnce = false
 activeGunDeath = true
 
