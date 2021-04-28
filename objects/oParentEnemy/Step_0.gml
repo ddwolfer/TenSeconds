@@ -85,7 +85,7 @@ switch(state){
 		break
 		
 	case ENEMYSTATE.CHASE:
-	/*
+		/*
 		if(self.x - target.x < 0) xx = 1
 		else if(self.x - target.x > 0) xx = -1
 		else if(self.x - target.x == 0) xx = 0
@@ -101,14 +101,21 @@ switch(state){
 		if(!collision_circle(x, y, chaseRange, target, false, false)){
 			state = ENEMYSTATE.IDLE
 		}
-	*/
-		enemyPath = path_add()
-		mp_potential_path(enemyPath, oPlayer.x, oPlayer.y, chaseSpeed, 4,false)
-		path_start( enemyPath, chaseSpeed, path_action_stop, true )
+		*/
+		if( pathChangeCount == 0 ){
+			enemyPath = path_add()
+			mp_potential_path(enemyPath, oPlayer.x, oPlayer.y, chaseSpeed, 4,false)
+			path_start( enemyPath, chaseSpeed, path_action_stop, true )
+		}
+		pathChangeCount+=1
+		if( pathChangeCount >= room_speed/2 ){
+			pathChangeCount = 0
+		}
+		
 		break
 	
 }
-/*	
+
 if(xx != 0 || yy != 0){
 	dir = point_direction(0, 0, xx, yy)
 
@@ -135,4 +142,4 @@ if(xx != 0 || yy != 0){
 	}
 	y += ySpeed;
 	x += xSpeed;
-}*/
+}

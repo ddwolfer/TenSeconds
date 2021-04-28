@@ -10,6 +10,7 @@ enum ENEMYSTATE{
 	DIE
 }
 
+pathChangeCount = 0
 state = ENEMYSTATE.IDLE
 accell = 0.5
 layerID = layer_get_id("Tiles")
