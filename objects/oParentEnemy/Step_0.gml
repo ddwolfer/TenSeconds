@@ -12,10 +12,7 @@ if( Hp / MaxHp < 1.0){
 }
 //body attack 基礎撞擊傷害
 if( place_meeting(x,y,oPlayer) and not oPlayer.PlayerGetHurt){
-	oPlayer.Hp -= HitDamage
-	oPlayer.PlayerGetHurt = true
-	audio_play_sound(sd_PlayerGetHurt,10,false)
-	addScreenShake(8, 16)
+	playerGetHurt(HitDamage)
 }
 
 switch(state){	
@@ -63,6 +60,7 @@ switch(state){
 		break
 		
 	case ENEMYSTATE.CHASE:
+	/*
 		if(self.x - target.x < 0) xx = 1
 		else if(self.x - target.x > 0) xx = -1
 		else if(self.x - target.x == 0) xx = 0
@@ -78,6 +76,11 @@ switch(state){
 		if(!collision_circle(x, y, chaseRange, target, false, false)){
 			state = ENEMYSTATE.IDLE
 		}
+	*/
+		enemyPath = path_add()
+		mp_potential_path(enemyPath, oPlayer.x, oPlayer.y, chaseSpeed, 4,false)
+		path_start( enemyPath, chaseSpeed, path_action_stop, true )
+		show_debug_message(path_position)
 		break
 	
 }

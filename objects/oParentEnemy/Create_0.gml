@@ -15,9 +15,9 @@ layerID = layer_get_id("Tiles")
 tiles = layer_tilemap_get_id(layerID)
 
 tileSize = 16
-
+//chase setting
 chaseRange = 150
-
+chaseSpeed = 0.5
 target = oPlayer
 
 counter = 0
