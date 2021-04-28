@@ -29,7 +29,10 @@ wanderY = 0
 chaseRange = 150
 chaseSpeed = 0.5
 target = oPlayer
-
+enemyPath = path_add()
+RoomGrid = mp_grid_create(0, 0, room_width, room_height, 8,8)
+mp_grid_add_instances(RoomGrid, oWall, true)
+mp_grid_add_instances(RoomGrid, oSign, true)
 counter = 0
 //Attack
 HitDamage = 5
