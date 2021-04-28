@@ -9,4 +9,5 @@ if( place_meeting(x,y,oPlayer) and not oPlayer.PlayerGetHurt){
 	oPlayer.Hp -= BulletDamage
 	oPlayer.PlayerGetHurt = true
 	addScreenShake(8, 16)
+	instance_destroy(id)
 }
